@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Used Bikes Price Prediction </h1>
+    <form action="{{ url_for("gfg")}}" method="post">
+
+    <label for="year">year:</label>
+<input type="text" id="year" name=year" placeholder="year">
+
+     <label for="seller_type"> Seller Type : </label>
+    <select id="seller_type" name="seller_type">
+    <option value="1">Individual</option>
+    <option value="0">Dealer</option>
+    </select>
+
+    <label for="owner">Past Owner:</label>
+    <select id="owner" name="owner">
+    <option value="0">1st </option>
+    <option value="1">2nd </option>
+    <option value="2">3rd </option>
+    <option value="3">4th </option>
+    </select>
+
+    <label for="km_driven">Km Driven:</label>
+<input type="text" id="km_driven" name="km_driven" placeholder="km_driven">
+
+    <label for="brand">Brand Name:</label>
+    <select id="brand" name="brand">
+        <option value="5">Royal Enfield</option>
+        <option value="2">Honda </option>
+        <option value="8">Yamaha </option>
+        <option value="1">Hero </option>
+        <option value="0">Bajaj </option>
+        <option value="4">Other </option>
+        <option value="6">Suzuki </option>
+        <option value="7">TVS </option>
+        <option value="3">KTM </option>
+
+    </select>
+
+
+
+
+<button type="submit">Search</button>
+</body>
+</html>
